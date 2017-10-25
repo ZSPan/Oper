@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Oper
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/oper?createDatabaseIfNotExist=true
+    username: root
+    password:
+    driverClassName: com.mysql.jdbc.Driver
+
+  jpa:
+    database: mysql
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true

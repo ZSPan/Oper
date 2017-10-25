@@ -6,13 +6,7 @@
   <groupId>com.oper</groupId>
   <artifactId>Oper</artifactId>
   <version>1.0.0-SNAPSHOT</version>
-  <modules>
-    <module>webapp</module>
-    <module>common</module>
-    <module>dao</module>
-    <module>service</module>
-  </modules>
-  <packaging>pom</packaging>
+  <packaging>jar</packaging>
   <name>Oper</name>
 
   <parent>
@@ -25,6 +19,22 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>
     </dependency>
   </dependencies>
 
