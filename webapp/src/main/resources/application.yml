@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: Oper
+  datasource:
+    url: jdbc:mysql://localhost/oper
+    username: root
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
+    tomcat:
+          max-wait: 3000
+          max-active: 50
+          test-on-borrow: true
