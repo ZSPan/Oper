@@ -1,6 +1,7 @@
 package com.oper.entity;
 
 import java.io.Serializable;
+import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -23,5 +24,7 @@ public class Token implements Serializable {
   private String token;
   @OneToOne(targetEntity = User.class)
   private User user;
+  private Date creation;
+  private Date expire;
 
 }

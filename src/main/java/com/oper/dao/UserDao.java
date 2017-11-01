@@ -13,10 +13,10 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserDao extends JpaRepository<User, Long> {
 
-  @Query("SELECT user FROM User user WHERE email = :email")
+  @Query("SELECT user FROM User user WHERE user.email = :email")
   User getByEmail(@Param("email") String email);
 
-  @Query("SELECT user FROM User user WHERE nickname = :nickname")
+  @Query("SELECT user FROM User user WHERE user.nickname = :nickname")
   User getByNickname(@Param("nickname") String nickname);
 
 }
