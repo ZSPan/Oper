@@ -4,11 +4,13 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.UUID;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 
 /**
  * @author yemingfeng
  */
 @Slf4j
+@Component
 public class CoderHelper {
 
   public static String generateToken() {

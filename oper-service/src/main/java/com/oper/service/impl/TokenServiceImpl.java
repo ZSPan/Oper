@@ -1,6 +1,6 @@
 package com.oper.service.impl;
 
-import com.entity.dao.TokenDao;
+import com.oper.dao.TokenDao;
 import com.oper.entity.Token;
 import com.oper.entity.User;
 import com.oper.helper.CoderHelper;

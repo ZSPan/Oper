@@ -21,5 +21,9 @@
       <groupId>com.oper</groupId>
       <artifactId>oper-entity</artifactId>
     </dependency>
+    <dependency>
+      <groupId>com.oper</groupId>
+      <artifactId>oper-common</artifactId>
+    </dependency>
   </dependencies>
 </project>

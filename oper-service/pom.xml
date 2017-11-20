@@ -13,10 +13,6 @@
   <dependencies>
     <dependency>
       <groupId>com.oper</groupId>
-      <artifactId>oper-entity</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>com.oper</groupId>
       <artifactId>oper-dao</artifactId>
     </dependency>
     <dependency>
