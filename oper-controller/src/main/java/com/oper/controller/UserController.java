@@ -3,6 +3,7 @@ package com.oper.controller;
 import com.oper.bean.ApiResultBean;
 import com.oper.entity.User;
 import com.oper.service.UserService;
+import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,7 +29,7 @@ public class UserController {
 
   @RequestMapping(value = "", method = RequestMethod.POST)
   @ResponseBody
-  public ApiResultBean register(@RequestBody User user) {
+  public ApiResultBean register(@RequestBody @Valid User user) {
     return userService.register(user);
   }
 
